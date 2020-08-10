@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4287f5">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Any App!"
+        android:textColor="#f5e042"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Box"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="356dp"
+        android:background="@drawable/shape_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="308dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Inloggen"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Gebruikersnaam:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="207dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Wachtwoord:"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="121dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textWachtwoordVergeten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="106dp"
+        android:fontFamily="@font/biorhyme_light"
+        android:text="Wachtwoord vergeten?"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="48dp"
+        android:background="#F44336"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Login"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Box"
+        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Box"
+        app:layout_constraintTop_toTopOf="@+id/Box" />
+
+    <TextView
+        android:id="@+id/textRegistreren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="131dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Nog geen gebruiker?"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistreren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Box" />
+
+    <Button
+        android:id="@+id/buttonRegistreren"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="44dp"
+        android:background="#f5e042"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Registreren!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistreren"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
