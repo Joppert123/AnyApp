@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#4287f5">
+
+    <TextView
+        android:id="@+id/re.Box"
+        android:layout_width="299dp"
+        android:layout_height="565dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/shape_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/re.textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="489dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Registreren"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <TextView
+        android:id="@+id/re.textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="422dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Gebruikersnaam:"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <EditText
+        android:id="@+id/re.editTextUsername"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <TextView
+        android:id="@+id/re.textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="337dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="E-mailadres:"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <EditText
+        android:id="@+id/re.editTextEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="296dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <TextView
+        android:id="@+id/re.textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="294dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="249dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Wachtwoord:"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <EditText
+        android:id="@+id/re.editTextPassword"
+        android:inputType="textPassword"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="208dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <TextView
+        android:id="@+id/re.textPasswordAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="161dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Herhaal wachtwoord:"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <EditText
+        android:id="@+id/re.editTextPasswordAgain"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+    <Button
+        android:id="@+id/re.buttonRegistreer"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="47dp"
+        android:background="#F44336"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Registreer"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/re.Box"
+        app:layout_constraintEnd_toEndOf="@+id/re.Box"
+        app:layout_constraintStart_toStartOf="@+id/re.Box"
+        app:layout_constraintTop_toTopOf="@+id/re.Box" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

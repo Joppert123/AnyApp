@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".LoginActivity"
     android:background="#4287f5">
 
     <TextView
-        android:id="@+id/textTitle"
+        android:id="@+id/lo.textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
@@ -19,7 +19,7 @@
         android:text="Any App!"
         android:textColor="#f5e042"
         android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/Box"
+        app:layout_constraintBottom_toTopOf="@+id/lo.Box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/Box"
+        android:id="@+id/lo.Box"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_marginStart="177dp"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.454" />
 
     <TextView
-        android:id="@+id/textLogin"
+        android:id="@+id/lo.textLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="82dp"
@@ -53,13 +53,13 @@
         android:fontFamily="@font/biorhyme_bold"
         android:text="Inloggen"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box" />
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box" />
 
     <TextView
-        android:id="@+id/textUsername"
+        android:id="@+id/lo.textUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -68,13 +68,13 @@
         android:layout_marginBottom="1dp"
         android:fontFamily="@font/biorhyme"
         android:text="Gebruikersnaam:"
-        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box" />
+        app:layout_constraintBottom_toTopOf="@+id/lo.editTextUsername"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/lo.editTextUsername"
         android:layout_width="200dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -83,14 +83,14 @@
         android:layout_marginBottom="207dp"
         android:fontFamily="@font/biorhyme_bold"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toBottomOf="@+id/lo.textUsername" />
 
     <TextView
-        android:id="@+id/textPassword"
+        android:id="@+id/lo.textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -99,13 +99,13 @@
         android:layout_marginBottom="164dp"
         android:fontFamily="@font/biorhyme"
         android:text="Wachtwoord:"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box" />
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/lo.editTextPassword"
         android:layout_width="200dp"
         android:layout_height="42dp"
         android:layout_marginStart="33dp"
@@ -114,15 +114,15 @@
         android:layout_marginBottom="121dp"
         android:fontFamily="@font/biorhyme_bold"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
         app:layout_constraintHorizontal_bias="0.018"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box"
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textWachtwoordVergeten"
+        android:id="@+id/lo.textWachtwoordVergeten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="115dp"
@@ -132,13 +132,13 @@
         android:fontFamily="@font/biorhyme_light"
         android:text="Wachtwoord vergeten?"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box" />
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/lo.buttonLogin"
         android:layout_width="76dp"
         android:layout_height="42dp"
         android:layout_marginStart="33dp"
@@ -149,14 +149,14 @@
         android:fontFamily="@font/biorhyme_bold"
         android:text="Login"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/Box"
-        app:layout_constraintEnd_toEndOf="@+id/Box"
+        app:layout_constraintBottom_toBottomOf="@+id/lo.Box"
+        app:layout_constraintEnd_toEndOf="@+id/lo.Box"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Box"
-        app:layout_constraintTop_toTopOf="@+id/Box" />
+        app:layout_constraintStart_toStartOf="@+id/lo.Box"
+        app:layout_constraintTop_toTopOf="@+id/lo.Box" />
 
     <TextView
-        android:id="@+id/textRegistreren"
+        android:id="@+id/lo.textRegistreren"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="130dp"
@@ -164,13 +164,13 @@
         android:layout_marginEnd="131dp"
         android:fontFamily="@font/biorhyme"
         android:text="Nog geen gebruiker?"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRegistreren"
+        app:layout_constraintBottom_toTopOf="@+id/lo.buttonRegistreren"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Box" />
+        app:layout_constraintTop_toBottomOf="@+id/lo.Box" />
 
     <Button
-        android:id="@+id/buttonRegistreren"
+        android:id="@+id/lo.buttonRegistreren"
         android:layout_width="142dp"
         android:layout_height="47dp"
         android:layout_marginStart="134dp"
@@ -179,15 +179,13 @@
         android:layout_marginBottom="44dp"
         android:background="#f5e042"
         android:fontFamily="@font/biorhyme_bold"
+        android:onClick="openRegister"
         android:text="Registreren!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRegistreren"
+        app:layout_constraintTop_toBottomOf="@+id/lo.textRegistreren"
         app:layout_constraintVertical_bias="1.0" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
