@@ -179,7 +179,6 @@
         android:layout_marginBottom="44dp"
         android:background="#f5e042"
         android:fontFamily="@font/biorhyme_bold"
-        android:onClick="openRegister"
         android:text="Registreren!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
