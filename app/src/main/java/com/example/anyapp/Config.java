@@ -6,4 +6,5 @@ public class Config {
 
     public static final String URL_REGISTER = URL+"registerUser.php";
     public static final String URL_LOGIN = URL+"loginUser.php";
+    public static final String URL_UPDATE = URL+"updateUser.php";
 }

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeUserDetails"
+    android:background="#4287f5">
+
+    <TextView
+        android:id="@+id/cud.Box"
+        android:layout_width="299dp"
+        android:layout_height="565dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/shape_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cud.textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="489dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Gegevens aanpassen"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box" />
+
+    <TextView
+        android:id="@+id/cud.textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="422dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="Gebruikersnaam:"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box" />
+
+    <EditText
+        android:id="@+id/cud.editTextUsername"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box" />
+
+    <TextView
+        android:id="@+id/cud.textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="337dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="E-mailadres:"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box" />
+
+    <EditText
+        android:id="@+id/cud.editTextEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="296dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box" />
+
+    <Button
+        android:id="@+id/cud.buttonAanpassen"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:background="#F44336"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Aanpassen"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/cud.Box"
+        app:layout_constraintEnd_toEndOf="@+id/cud.Box"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="@+id/cud.Box"
+        app:layout_constraintTop_toTopOf="@+id/cud.Box"
+        app:layout_constraintVertical_bias="0.591" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

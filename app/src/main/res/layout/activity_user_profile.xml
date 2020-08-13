@@ -54,16 +54,87 @@
 
     <TextView
         android:id="@+id/up.textAccountUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="227dp"
+        android:layout_height="19dp"
         android:layout_marginStart="31dp"
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="401dp"
         android:fontFamily="@font/biorhyme_bold"
-        android:text="Gebruikersnaam:"
+        android:text="()"
         app:layout_constraintBottom_toBottomOf="@+id/up.Box"
         app:layout_constraintEnd_toEndOf="@+id/up.Box"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/up.Box"
-        app:layout_constraintTop_toBottomOf="@+id/up.textUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/up.textUsername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/up.textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="352dp"
+        android:fontFamily="@font/biorhyme"
+        android:text="E-mailadres:"
+        app:layout_constraintBottom_toBottomOf="@+id/up.Box"
+        app:layout_constraintEnd_toEndOf="@+id/up.Box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up.Box"
+        app:layout_constraintTop_toTopOf="@+id/up.Box"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/up.textAccountEmail"
+        android:layout_width="228dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="333dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="()"
+        app:layout_constraintBottom_toBottomOf="@+id/up.Box"
+        app:layout_constraintEnd_toEndOf="@+id/up.Box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up.Box"
+        app:layout_constraintTop_toTopOf="@+id/up.Box" />
+
+    <Button
+        android:id="@+id/up.buttonChangeDetails"
+        android:layout_width="188dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="109dp"
+        android:background="#F44336"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Gegevens wijzigen"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/up.Box"
+        app:layout_constraintEnd_toEndOf="@+id/up.Box"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/up.Box"
+        app:layout_constraintTop_toTopOf="@+id/up.Box" />
+
+    <Button
+        android:id="@+id/up.buttonChangePassword"
+        android:layout_width="188dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="52dp"
+        android:background="#F44336"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="Wachtwoord wijzigen"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/up.Box"
+        app:layout_constraintEnd_toEndOf="@+id/up.Box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up.Box"
+        app:layout_constraintTop_toTopOf="@+id/up.Box" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
