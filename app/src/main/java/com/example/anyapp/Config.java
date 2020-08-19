@@ -2,8 +2,8 @@ package com.example.anyapp;
 
 public class Config {
 
-//    private static final String URL = "http://192.168.178.17/AnyApp/Android/V1/";
-    private static final String URL = "http://192.168.178.32/AnyApp/Android/V1/";
+    private static final String URL = "http://192.168.178.17/AnyApp/Android/V1/";
+//    private static final String URL = "http://192.168.178.32/AnyApp/Android/V1/";
 
 
     public static final String URL_REGISTER = URL+"registerUser.php";

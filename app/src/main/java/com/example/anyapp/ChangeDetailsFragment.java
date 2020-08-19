@@ -1,13 +1,15 @@
 package com.example.anyapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -21,29 +23,33 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChangeUserDetails extends AppCompatActivity implements View.OnClickListener {
+/**
+ * Created by Joppe
+ */
+
+public class ChangeDetailsFragment extends Fragment implements View.OnClickListener {
 
     private EditText editTextUsername, editTextEmail;
-
     private Button buttonChangeDetails;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_user_details);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        View view = inflater.inflate(R.layout.layout_change_details, container, false);
 
-        editTextUsername = (EditText) findViewById(R.id.cud_editTextUsername);
-        editTextEmail = (EditText) findViewById(R.id.cud_editTextEmail);
+        editTextUsername = view.findViewById(R.id.cud_editTextUsername);
+        editTextEmail = view.findViewById(R.id.cud_editTextEmail);
 
-        buttonChangeDetails = (Button) findViewById(R.id.cud_buttonAanpassen);
+        buttonChangeDetails = view.findViewById(R.id.cud_buttonAanpassen);
 
         buttonChangeDetails.setOnClickListener(this);
+
+        return view;
     }
 
     private void changeDetails(){
         final String username = editTextUsername.getText().toString().trim();
         final String email = editTextEmail.getText().toString().trim();
-        final int user_id = SharedPrefManager.getInstance(this).getID();
+        final int user_id = SharedPrefManager.getInstance(getActivity()).getID();
 
         StringRequest sr = new StringRequest(
                 Request.Method.POST,
@@ -55,7 +61,7 @@ public class ChangeUserDetails extends AppCompatActivity implements View.OnClick
                             Log.e("LOG", response);
                             JSONObject jsonObject = new JSONObject(response);
                             Toast.makeText(
-                                    getApplicationContext(),
+                                    getActivity(),
                                     response,
                                     Toast.LENGTH_LONG
                             ).show();
@@ -70,7 +76,7 @@ public class ChangeUserDetails extends AppCompatActivity implements View.OnClick
                     public void onErrorResponse(VolleyError error) {
                         Log.e("LOG", error.toString());
                         Toast.makeText(
-                                getApplicationContext(),
+                                getActivity(),
                                 error.getMessage(),
                                 Toast.LENGTH_LONG
                         ).show();
@@ -87,7 +93,7 @@ public class ChangeUserDetails extends AppCompatActivity implements View.OnClick
             }
         };
 
-        RequestHandler.getInstance(this).addToRequestQueue(sr);
+        RequestHandler.getInstance(getActivity()).addToRequestQueue(sr);
     }
 
     @Override

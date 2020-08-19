@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * Created by Joppe
@@ -40,6 +41,19 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Fragment fragment = null;
+        switch (v.getId()) {
+            case R.id.up_buttonChangeDetails:
+                fragment = new ChangeDetailsFragment();
+                replaceFragment(fragment);
+                break;
+        }
+    }
 
+    public void replaceFragment(Fragment fragment){
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, fragment);
+        transaction.addToBackStack("tag");
+        transaction.commit();
     }
 }
