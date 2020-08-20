@@ -136,20 +136,5 @@
         app:layout_constraintStart_toStartOf="@+id/up.Box"
         app:layout_constraintTop_toTopOf="@+id/up.Box" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="51dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="332dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/up.Box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profiel_foto_circle" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
